@@ -1,0 +1,28 @@
+
+h1, h2{
+    padding:50px;
+}  
+
+.btn:hover, p:hover{
+    box-shadow:
+    0 0 10px 5px #fff,
+    0 0 20px 10px  hsl(181, 100%, 50%);
+}
+
+
+.card {
+    background: url(../images/space.jpg)no-repeat center center fixed;
+    background-size: cover;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    border: #ffd700 solid 2px;
+}
+
+body {
+    background: url(../images/cards.jpg)no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
