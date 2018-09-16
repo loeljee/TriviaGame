@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Star Wars</title>
+    <title>SPACE TRIVIA</title>
     <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -14,18 +14,40 @@
 
 <body>
     <div class="row">
-        <h1>SPACE TRIVIA!</h1>
-        <div class="col-4"></div>
-        <h1>NO PRESSURE:</h1>
+        <div class="col-1"></div>
+        <div class="col-4 hones">
+            <h1>SPACE TRIVIA!</h1>
+        </div>
+        <div class="col-2"></div>
+        <div id="hurry" class="col-4 hones">
+            <h1>BETTER HURRY: </h1>
+        </div>
+        <div class="col-1">
+            <h1 id="timer"></h1>
+        </div>
     </div>
+
+    <div class="col-12">
+        <div class="card" id="startPoster">
+            <h1>SPACE TRIVIA!</h1>
+            <div id="startBtn" class="btn">START</div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card" id="endPoster">
+            <h1>Times Up!</h1>
+        </div>
+    </div>
+
     <div class="row justify-content-center">
         <div class="col-8">
             <div class="card" id="SunEarth">
                 <h4>What is the distance between the Sun and Earth?</h5>
-                    <p>A: 438,000 miles</p>
-                    <p>B: 27 million miles</p>
-                    <p>C: 93 million miles</p>
-                    <p>D: 2 million miles</p>
+                    <p class="wrong">A: 438,000 miles</p>
+                    <p class="wrong">B: 27 million miles</p>
+                    <p class="right">C: 93 million miles</p>
+                    <p class="wrong">D: 2 million miles</p>
             </div>
         </div>
     </div>
@@ -34,10 +56,10 @@
         <div class="col-8">
             <div class="card" id="SunEarth">
                 <h4>What is the distance between the Sun and Earth?</h5>
-                    <p>A: 438,000 miles</p>
-                    <p>B: 27 million miles</p>
-                    <p>C: 93 million miles</p>
-                    <p>D: 2 million miles</p>
+                    <p class="wrong">A: 438,000 miles</p>
+                    <p class="wrong">B: 27 million miles</p>
+                    <p class="wrong">C: 93 million miles</p>
+                    <p class="wrong">D: 2 million miles</p>
             </div>
         </div>
     </div>
@@ -46,10 +68,10 @@
         <div class="col-8">
             <div class="card" id="SunEarth">
                 <h4>What is the distance between the Sun and Earth?</h5>
-                    <p>A: 438,000 miles</p>
-                    <p>B: 27 million miles</p>
-                    <p>C: 93 million miles</p>
-                    <p>D: 2 million miles</p>
+                    <p class="wrong">A: 438,000 miles</p>
+                    <p class="wrong">B: 27 million miles</p>
+                    <p class="wrong">C: 93 million miles</p>
+                    <p class="wrong">D: 2 million miles</p>
             </div>
         </div>
     </div>
@@ -58,28 +80,20 @@
         <div class="col-8">
             <div class="card" id="SunEarth">
                 <h4>What is the distance between the Sun and Earth?</h5>
-                    <p>A: 438,000 miles</p>
-                    <p>B: 27 million miles</p>
-                    <p>C: 93 million miles</p>
-                    <p>D: 2 million miles</p>
+                    <p class="wrong">A: 438,000 miles</p>
+                    <p class="wrong">B: 27 million miles</p>
+                    <p class="wrong">C: 93 million miles</p>
+                    <p class="wrong">D: 2 million miles</p>
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-5">
-            <div id="userPick"></div>
+        <div class="card col-12">
+            <div id="correct"></div>
+            <div id="wrong"></div>
+            <div id="unanswered"></div>
         </div>
-        <div class="col-2">
-            <div id="btn" class="btn btn-warning">ATTACK</div>
-        </div>
-        <div class="col-5">
-            <div id="userEnemy"></div>
-        </div>
-    </div>
-    <div class="col-12">
-        <h2 id="winner"></h2>
-        <div id="win" class="col-12"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
