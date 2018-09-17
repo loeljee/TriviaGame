@@ -2,102 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>SPACE TRIVIA</title>
-    <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Space Trivia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
 
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-4 hones">
-            <h1>SPACE TRIVIA!</h1>
-        </div>
-        <div class="col-2"></div>
-        <div id="hurry" class="col-4 hones">
-            <h1>BETTER HURRY: </h1>
-        </div>
-        <div class="col-1">
-            <h1 id="timer"></h1>
-        </div>
-    </div>
 
-    <div class="col-12">
-        <div class="card" id="startPoster">
-            <h1>SPACE TRIVIA!</h1>
-            <div id="startBtn" class="btn">START</div>
-        </div>
-    </div>
+    <div class="container">
 
-    <div class="col-12">
-        <div class="card" id="endPoster">
-            <h1>Times Up!</h1>
-        </div>
-    </div>
+        <h1 id="topText">SPACE TRIVIA</h1>
 
-    <div class="row justify-content-center">
-        <div class="col-8">
-            <div class="card" id="SunEarth">
-                <h4>What is the distance between the Sun and Earth?</h5>
-                    <p class="wrong">A: 438,000 miles</p>
-                    <p class="wrong">B: 27 million miles</p>
-                    <p class="right">C: 93 million miles</p>
-                    <p class="wrong">D: 2 million miles</p>
-            </div>
+        <div class="jumbotron text-center" id="gameScreen">
+            <h2 id="start">START</h2>
         </div>
-    </div>
 
-    <div class="row justify-content-center">
-        <div class="col-8">
-            <div class="card" id="SunEarth">
-                <h4>What is the distance between the Sun and Earth?</h5>
-                    <p class="wrong">A: 438,000 miles</p>
-                    <p class="wrong">B: 27 million miles</p>
-                    <p class="wrong">C: 93 million miles</p>
-                    <p class="wrong">D: 2 million miles</p>
-            </div>
-        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </div>
-
-    <div class="row justify-content-center">
-        <div class="col-8">
-            <div class="card" id="SunEarth">
-                <h4>What is the distance between the Sun and Earth?</h5>
-                    <p class="wrong">A: 438,000 miles</p>
-                    <p class="wrong">B: 27 million miles</p>
-                    <p class="wrong">C: 93 million miles</p>
-                    <p class="wrong">D: 2 million miles</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row justify-content-center">
-        <div class="col-8">
-            <div class="card" id="SunEarth">
-                <h4>What is the distance between the Sun and Earth?</h5>
-                    <p class="wrong">A: 438,000 miles</p>
-                    <p class="wrong">B: 27 million miles</p>
-                    <p class="wrong">C: 93 million miles</p>
-                    <p class="wrong">D: 2 million miles</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="card col-12">
-            <div id="correct"></div>
-            <div id="wrong"></div>
-            <div id="unanswered"></div>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
